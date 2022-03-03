@@ -1,0 +1,11 @@
+dedup - file deduplication tool by grunfink - public domain
+
+Iterates a set of files and hard-links those that are identical.
+
+Usage: dedup [-q] [-n] [-m {min_size}] [-b {blk_size}] {files...}
+
+Options:
+ -m {min_size}          Minimum file size in bytes (default: 16).
+ -b {blk_size}          Block size in bytes (default: 1048576).
+ -q                     Be quiet (only print errors).
+ -n                     Dry run (print what would be done, do nothing).
